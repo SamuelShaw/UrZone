@@ -307,7 +307,7 @@
 				TargetAttributes = {
 					C37D63B31C19FE0D009C9C66 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = G9WMWPLR5N;
+						DevelopmentTeam = BBMX4YUNT7;
 					};
 				};
 			};
@@ -536,7 +536,7 @@
 				);
 				INFOPLIST_FILE = UrZone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tiiy.UrZone;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiiy.UrZonePhil;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -556,7 +556,7 @@
 				);
 				INFOPLIST_FILE = UrZone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tiiy.UrZone;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiiy.UrZonePhil;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
