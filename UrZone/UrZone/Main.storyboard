@@ -202,6 +202,9 @@
                                         <exclude reference="jNr-mo-Nnp"/>
                                     </mask>
                                 </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="12" y="28" width="296" height="30"/>
+                                </variation>
                                 <connections>
                                     <outlet property="delegate" destination="n8U-Jx-HhO" id="dec-iT-ESY"/>
                                 </connections>
@@ -281,6 +284,9 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="66" width="375" height="534"/>
+                                </variation>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DxT-wc-tsp">
                                 <rect key="frame" x="316" y="72" width="39" height="30"/>
@@ -299,6 +305,9 @@
                                         <exclude reference="a3B-07-3mC"/>
                                         <exclude reference="iN9-Vt-Xem"/>
                                     </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="316" y="28" width="39" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="send" destination="n8U-Jx-HhO" eventType="touchUpInside" id="tke-Gg-2ey"/>
@@ -859,7 +868,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RyF-DI-7bU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-419.25" y="92.5"/>
+            <point key="canvasLocation" x="-230.25" y="-33.5"/>
         </scene>
     </scenes>
     <resources>

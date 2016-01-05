@@ -37,6 +37,16 @@ class SignInViewController: UIViewController, UITextFieldDelegate
 
     }
     
+    override func viewWillAppear(animated: Bool) {
+        if (PFUser.currentUser() != nil) {
+            print ("\(PFUser.currentUser)")
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                
+                let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Detect")
+                self.presentViewController(viewController, animated: true, completion: nil)
+            })
+        }
+    }
 
     
     func didTapView()
