@@ -1,0 +1,24 @@
+PODS:
+  - Bolts/Tasks (1.5.0)
+  - Cosmos (1.1.5)
+  - Parse (1.10.0):
+    - Bolts/Tasks (~> 1.5)
+  - ParseTwitterUtils (1.9.1):
+    - Bolts/Tasks (~> 1.5)
+    - Parse (~> 1.9)
+  - TextFieldEffects (1.1.0)
+
+DEPENDENCIES:
+  - Cosmos (~> 1.1)
+  - Parse
+  - ParseTwitterUtils
+  - TextFieldEffects
+
+SPEC CHECKSUMS:
+  Bolts: 722ab9a4f8b50fc4ed1b9998a5a7a2b3f16d80b4
+  Cosmos: d05465696561ccb50fa8b7574026326bb23d654b
+  Parse: 90b2544822200f84b18bfacc4e8b0a3a6c3584a2
+  ParseTwitterUtils: 41e8849e37db471e874c6e515190ded19e043dc8
+  TextFieldEffects: 8e43fea8836e97be80fc4db27a1596c9e98a26ba
+
+COCOAPODS: 0.39.0
