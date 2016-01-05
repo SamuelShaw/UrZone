@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xKO-tQ-IgJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="W1V-ch-WW8">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
@@ -75,6 +75,9 @@
                                         <color key="value" red="0.50686967372894287" green="0.30418181419372559" blue="0.64453870058059692" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="xKO-tQ-IgJ" id="lzd-xB-2V2"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slH-Gj-mF3" userLabel="LoginButton">
                                 <rect key="frame" x="101" y="455" width="160" height="50"/>
@@ -133,6 +136,9 @@
                                         <color key="value" red="0.50686967372894287" green="0.30418181419372559" blue="0.64453870058059692" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="xKO-tQ-IgJ" id="0qQ-uP-zDV"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <animations/>
@@ -208,6 +214,9 @@
                                         <exclude reference="jNr-mo-Nnp"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="n8U-Jx-HhO" id="dec-iT-ESY"/>
+                                </connections>
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="160" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Z1t-3b-mNf">
                                 <rect key="frame" x="0.0" y="110" width="375" height="557"/>
@@ -412,6 +421,9 @@
                                         <color key="value" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="aDn-5F-aPd" id="IhX-ax-mFj"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9fB-RI-0hh" customClass="KaedeTextField" customModule="UrZone" customModuleProvider="target">
                                 <rect key="frame" x="16" y="296" width="343" height="38"/>
@@ -426,6 +438,9 @@
                                         <color key="value" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="aDn-5F-aPd" id="C4d-2F-WC1"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ph-OI-Inb" customClass="KaedeTextField" customModule="UrZone" customModuleProvider="target">
                                 <rect key="frame" x="16" y="342" width="343" height="38"/>
@@ -440,6 +455,9 @@
                                         <color key="value" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="aDn-5F-aPd" id="lPm-Jt-oGa"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OcT-sb-qzN">
                                 <rect key="frame" x="133" y="388" width="100" height="30"/>
@@ -609,6 +627,9 @@
                                         <color key="value" red="0.48179489374160767" green="0.3683817982673645" blue="0.60044926404953003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="dsQ-M7-z15" id="CsG-2a-XwW"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dx8-Ye-Osi">
                                 <rect key="frame" x="123" y="340" width="128" height="30"/>

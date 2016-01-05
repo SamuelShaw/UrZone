@@ -37,12 +37,9 @@ class ClassicSignupViewController: UIViewController, UITextFieldDelegate
     }
     
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool
-    {
-        emailTextField.resignFirstResponder()
-        usernameTextField.resignFirstResponder()
-        passwordTextField.resignFirstResponder()
-        return true
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     
     

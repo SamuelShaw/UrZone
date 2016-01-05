@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class PasswordRecoverViewController: UIViewController
+class PasswordRecoverViewController: UIViewController, UITextFieldDelegate
 {
     
     @IBOutlet weak var userEmailTextfield: UITextField!
@@ -17,6 +17,8 @@ class PasswordRecoverViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        self.userEmailTextfield.delegate = self
 
         // Resign Keyboard
         let tapRecognizer = UITapGestureRecognizer()
@@ -27,6 +29,11 @@ class PasswordRecoverViewController: UIViewController
     func didTapView()
     {
         self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     
     @IBAction func recoverPasswordPressed(sender: AnyObject)

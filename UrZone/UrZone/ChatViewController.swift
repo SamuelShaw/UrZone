@@ -42,6 +42,8 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
+        self.messageTextfield.delegate = self
+        
         updateTimer = NSTimer.scheduledTimerWithTimeInterval(updateDelay, target: self, selector: "update", userInfo: nil, repeats: true)
         
         print ("\(PFusernameString)")
@@ -55,6 +57,11 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     func didTapView()
     {
         self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     
     func update() {

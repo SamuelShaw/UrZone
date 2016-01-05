@@ -44,6 +44,11 @@ class SignInViewController: UIViewController, UITextFieldDelegate
         self.view.endEditing(true)
     }
     
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+    
   
     // Phil's Login Code
     
