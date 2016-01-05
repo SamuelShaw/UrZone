@@ -184,10 +184,10 @@
                         <viewControllerLayoutGuide type="bottom" id="pfV-nK-fmW"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="iHr-MJ-qNR">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter A Message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="94M-KO-WFw">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter A Message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="94M-KO-WFw">
                                 <rect key="frame" x="12" y="72" width="296" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="296" id="7fm-ji-2mD"/>
@@ -209,7 +209,7 @@
                                     <outlet property="delegate" destination="n8U-Jx-HhO" id="dec-iT-ESY"/>
                                 </connections>
                             </textField>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="160" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Z1t-3b-mNf">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="160" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Z1t-3b-mNf">
                                 <rect key="frame" x="0.0" y="110" width="375" height="557"/>
                                 <color key="backgroundColor" red="0.64705882349999999" green="0.73725490199999999" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -288,7 +288,7 @@
                                     <rect key="frame" x="0.0" y="66" width="375" height="534"/>
                                 </variation>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DxT-wc-tsp">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DxT-wc-tsp">
                                 <rect key="frame" x="316" y="72" width="39" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="36" id="Gy3-uQ-9hc"/>
@@ -367,7 +367,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sB8-Wm-K5M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1153.5" y="92"/>
+            <point key="canvasLocation" x="1263.75" y="92.5"/>
         </scene>
         <!--Classic Signup View Controller-->
         <scene sceneID="wb7-gt-htz">
@@ -698,7 +698,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ges-4U-HFj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="309" y="16"/>
+            <point key="canvasLocation" x="485.25" y="-54.5"/>
         </scene>
         <!--Detect Beacons View Controller-->
         <scene sceneID="oHU-ZO-Uua">
