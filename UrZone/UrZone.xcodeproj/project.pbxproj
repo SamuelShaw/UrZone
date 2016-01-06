@@ -29,7 +29,6 @@
 		001B7E201C38ED19006C21C7 /* signUp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 001B7E1F1C38ED19006C21C7 /* signUp.jpg */; };
 		001B7E2C1C38FAF5006C21C7 /* Add User-52.png in Resources */ = {isa = PBXBuildFile; fileRef = 001B7E2B1C38FAF5006C21C7 /* Add User-52.png */; };
 		0074F13D1C3B7CD100BEFD47 /* Quote-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 0074F13C1C3B7CD100BEFD47 /* Quote-50.png */; };
-		0074F1821C3C2F9E00BEFD47 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 0074F1761C3C2F9E00BEFD47 /* Contents.json */; };
 		00B212581C260C3D0070E081 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B212571C260C3D0070E081 /* ParseUI.framework */; };
 		00E0AB3D1C1A1EAB00A01934 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0AB3C1C1A1EAB00A01934 /* SignInViewController.swift */; };
 		00E0AB431C1A219C00A01934 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E0AB401C1A219C00A01934 /* Bolts.framework */; };
@@ -90,7 +89,6 @@
 		001B7E1F1C38ED19006C21C7 /* signUp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = signUp.jpg; sourceTree = "<group>"; };
 		001B7E2B1C38FAF5006C21C7 /* Add User-52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Add User-52.png"; sourceTree = "<group>"; };
 		0074F13C1C3B7CD100BEFD47 /* Quote-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quote-50.png"; sourceTree = "<group>"; };
-		0074F1761C3C2F9E00BEFD47 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		00B212571C260C3D0070E081 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = UrZone/ParseUI.framework; sourceTree = "<group>"; };
 		00E0AB3C1C1A1EAB00A01934 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		00E0AB401C1A219C00A01934 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = UrZone/Bolts.framework; sourceTree = "<group>"; };
@@ -213,15 +211,6 @@
 			name = "View Controllers";
 			sourceTree = "<group>";
 		};
-		0074F1751C3C2F9E00BEFD47 /* AppIcon.appiconset */ = {
-			isa = PBXGroup;
-			children = (
-				0074F1761C3C2F9E00BEFD47 /* Contents.json */,
-			);
-			name = AppIcon.appiconset;
-			path = AppIcons.appiconset;
-			sourceTree = "<group>";
-		};
 		0074F1C01C3C315D00BEFD47 /* Defaults */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,7 +256,6 @@
 		00FB90101C3CC7B7006ED82D /* Extras */ = {
 			isa = PBXGroup;
 			children = (
-				0074F1751C3C2F9E00BEFD47 /* AppIcon.appiconset */,
 				C39F315F1C2B17BE0003CE99 /* myZoneWav.wav */,
 				001B7E141C38DCB1006C21C7 /* border_base_future */,
 				001B7DFA1C38D79B006C21C7 /* TextFieldEffects */,
@@ -400,7 +388,6 @@
 			files = (
 				001B7E2C1C38FAF5006C21C7 /* Add User-52.png in Resources */,
 				001B7E091C38D79B006C21C7 /* Info.plist in Resources */,
-				0074F1821C3C2F9E00BEFD47 /* Contents.json in Resources */,
 				001B7E1C1C38EC82006C21C7 /* fbButton.png in Resources */,
 				C37D63C21C19FE0D009C9C66 /* LaunchScreen.storyboard in Resources */,
 				001B7E171C38DCB1006C21C7 /* BorderBase Italic.ttf in Resources */,
