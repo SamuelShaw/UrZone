@@ -140,13 +140,13 @@ class DetectBeaconsViewController: UIViewController, CLLocationManagerDelegate
                 //self.audioPlayer.play()
                 
                 
-
+<<<<<<< HEAD
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
                     
                     let viewController: UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("ChatMain")
                     self.presentViewController(viewController, animated: true, completion: nil) })
                     
-
+=======
 //                dispatch_async(dispatch_get_main_queue(), { () -> Void in
 //                    
 //                    let viewController: UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("ChatMain")
