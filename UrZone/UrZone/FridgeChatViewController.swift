@@ -136,18 +136,10 @@ class FridgeChatViewController: UIViewController, UITableViewDelegate, UITableVi
     @IBAction func fridgeLogoutPressed(sender: AnyObject)
     {
         PFUser.logOut()
-        var currentUser = PFUser.currentUser()
         
-        if currentUser == nil
-        {
-            dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                let viewController: UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("iPhoneStoryboard")
-                self.presentViewController(viewController, animated: true, completion: nil) })
-        }
-    }
-
+        let viewController: UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("iPhoneStoryboard")
     }
     
     
     
-
+}
