@@ -14,7 +14,7 @@ let PFusernameString = PFUser.currentUser()!.objectForKey("username")
 var currentSessionUN =  ""
 var currentSessionPW = ""
 
-class ChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate
+class ChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate, CLLocationManagerDelegate
 {
     
     @IBOutlet weak var tableView: UITableView!
@@ -32,6 +32,9 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     var currentData: [[String: String]] = []
     
+    let locationManager = CLLocationManager()
+    let region = CLBeaconRegion(proximityUUID: NSUUID(UUIDString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D")!, identifier: "EstimoteBeacons")
+    
     
 
     override func viewDidLoad()
@@ -46,6 +49,14 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         updateTimer = NSTimer.scheduledTimerWithTimeInterval(updateDelay, target: self, selector: "update", userInfo: nil, repeats: true)
         
+        locationManager.delegate = self
+        if (CLLocationManager.authorizationStatus() != CLAuthorizationStatus.AuthorizedWhenInUse)
+        {
+            locationManager.requestWhenInUseAuthorization()
+        }
+        
+        locationManager.startRangingBeaconsInRegion(region)
+        
         print ("\(PFusernameString)")
         
         // Resign Keyboard
@@ -53,6 +64,25 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         tapRecognizer.addTarget(self, action: "didTapView")
         self.view.addGestureRecognizer(tapRecognizer)
     }
+    
+    func locationManager(manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], inRegion region: CLBeaconRegion)
+    {
+        print(beacons)
+        let knownBeacons = beacons.filter{ $0.proximity != CLProximity.Unknown }
+        if (knownBeacons.count > 0)
+        {
+            let closestBeacon = knownBeacons[0] as CLBeacon
+            //if closestBeacon.rssi < -70
+                //if closestBeacon.proximity == .Far
+                if closestBeacon.minor == 22356 && closestBeacon.rssi < -70
+            {
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    let viewController: UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Detect")
+                    self.presentViewController(viewController, animated: true, completion: nil) })
+            }
+        }
+    }
+
     
     func didTapView()
     {
