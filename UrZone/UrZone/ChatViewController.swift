@@ -21,7 +21,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet weak var messageTextfield: UITextField!
     
-
+    
     var counterNumber = 0
     
     var username : String?
@@ -36,7 +36,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     let region = CLBeaconRegion(proximityUUID: NSUUID(UUIDString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D")!, identifier: "EstimoteBeacons")
     
     
-
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -73,8 +73,8 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         {
             let closestBeacon = knownBeacons[0] as CLBeacon
             //if closestBeacon.rssi < -70
-                //if closestBeacon.proximity == .Far
-                if closestBeacon.minor == 22356 && closestBeacon.rssi < -70
+            //if closestBeacon.proximity == .Far
+            if closestBeacon.minor == 22356 && closestBeacon.rssi < -70
             {
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
                     let viewController: UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Detect")
@@ -82,7 +82,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
         }
     }
-
+    
     
     func didTapView()
     {
@@ -140,10 +140,15 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBAction func logoutPressed(sender: AnyObject)
     {
         PFUser.logOut()
+        var currentUser = PFUser.currentUser()
         
-        let viewController: UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("iPhoneStoryboard")
+        if currentUser == nil
+        {
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                let viewController: UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("iPhoneStoryboard")
+                self.presentViewController(viewController, animated: true, completion: nil) })
+        }
     }
     
     
-
 }
