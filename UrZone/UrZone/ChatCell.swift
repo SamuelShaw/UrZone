@@ -11,17 +11,8 @@ import UIKit
 class ChatCell: UITableViewCell
 {
     @IBOutlet var chatText: UITextView!
+    
     @IBOutlet var chatUser: UILabel!
     
     @IBOutlet weak var roundView: UIView!
-    
-    
-     func viewDidLoad()
-    {
-        viewDidLoad()
-        // Do any additional setup after loading the view.
-               
-    }
-    
-
 }
