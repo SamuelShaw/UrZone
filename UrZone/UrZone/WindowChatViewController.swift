@@ -66,9 +66,9 @@ class WindowChatViewController: UIViewController, UITableViewDelegate, UITableVi
         if (knownBeacons.count > 0)
         {
             let closestBeacon = knownBeacons[0] as CLBeacon
-            //if closestBeacon.rssi < -70
+            if closestBeacon.rssi < -70
             //if closestBeacon.proximity == .Far
-            if closestBeacon.minor == 56045 && closestBeacon.rssi < -70
+            //if closestBeacon.minor == 56045 && closestBeacon.rssi < -70
  
 
             {
