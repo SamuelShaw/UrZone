@@ -106,7 +106,7 @@ class FridgeChatViewController: UIViewController, UITableViewDelegate, UITableVi
     {
         PFUser.logOut()
         
-        self.dismissViewControllerAnimated(true, completion: nil)
+        let viewController: UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("iPhoneStoryboard")
     }
     
     

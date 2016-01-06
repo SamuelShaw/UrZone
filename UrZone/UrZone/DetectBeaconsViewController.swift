@@ -97,8 +97,7 @@ class DetectBeaconsViewController: UIViewController, CLLocationManagerDelegate
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
                     
                     let viewController: UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("ChatMain")
-                    let navController = UINavigationController(rootViewController: viewController)
-                    self.presentViewController(navController, animated: true, completion: nil) })
+                    self.presentViewController(viewController, animated: true, completion: nil) })
 
             }
         }

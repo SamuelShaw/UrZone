@@ -110,7 +110,7 @@ class SamsChatViewController: UIViewController, UITableViewDelegate, UITableView
     {
         PFUser.logOut()
         
-        self.dismissViewControllerAnimated(true, completion: nil)
+        let viewController: UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("iPhoneStoryboard")
     }
     
     

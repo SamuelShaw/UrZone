@@ -53,6 +53,7 @@
 		00FB90141C3CC826006ED82D /* WindowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FB90131C3CC826006ED82D /* WindowTableViewCell.swift */; };
 		00FB90161C3CC838006ED82D /* SamsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FB90151C3CC838006ED82D /* SamsTableViewCell.swift */; };
 		00FB90181C3CC889006ED82D /* RRTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FB90171C3CC889006ED82D /* RRTableViewCell.swift */; };
+		00FB901B1C3D7680006ED82D /* UrZoneScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 00FB901A1C3D7680006ED82D /* UrZoneScreen.png */; };
 		B0D6A62A46096A13B9D683D0 /* Pods_UrZone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5195FD04410578C494BDA565 /* Pods_UrZone.framework */; };
 		C31F84A31C2AEE2000366BA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C31F84A21C2AEE2000366BA3 /* Main.storyboard */; };
 		C35FBE431C286F530072DFA5 /* ClassicSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35FBE421C286F530072DFA5 /* ClassicSignupViewController.swift */; };
@@ -113,6 +114,7 @@
 		00FB90131C3CC826006ED82D /* WindowTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowTableViewCell.swift; sourceTree = "<group>"; };
 		00FB90151C3CC838006ED82D /* SamsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SamsTableViewCell.swift; sourceTree = "<group>"; };
 		00FB90171C3CC889006ED82D /* RRTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RRTableViewCell.swift; sourceTree = "<group>"; };
+		00FB901A1C3D7680006ED82D /* UrZoneScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UrZoneScreen.png; sourceTree = "<group>"; };
 		5195FD04410578C494BDA565 /* Pods_UrZone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UrZone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C2BDC888042443D29ABD78 /* Pods-UrZone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrZone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UrZone/Pods-UrZone.debug.xcconfig"; sourceTree = "<group>"; };
 		608A0244C9211D69FFC8C5DF /* Pods-UrZone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrZone.release.xcconfig"; path = "Pods/Target Support Files/Pods-UrZone/Pods-UrZone.release.xcconfig"; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 				001B7E1B1C38EC82006C21C7 /* fbButton.png */,
 				00FB90011C3CA1C5006ED82D /* Quote-50-6.png */,
 				00E779E61C39E20500176802 /* 1451884235_Lock.png */,
+				00FB901A1C3D7680006ED82D /* UrZoneScreen.png */,
 				0074F13C1C3B7CD100BEFD47 /* Quote-50.png */,
 				00EF7C1B1C39127A00AC214F /* login-button.png */,
 				001B7E1D1C38EC8A006C21C7 /* twitterButton.png */,
@@ -404,6 +407,7 @@
 				C31F84A31C2AEE2000366BA3 /* Main.storyboard in Resources */,
 				C39F31601C2B17BE0003CE99 /* myZoneWav.wav in Resources */,
 				C37D63BF1C19FE0D009C9C66 /* Assets.xcassets in Resources */,
+				00FB901B1C3D7680006ED82D /* UrZoneScreen.png in Resources */,
 				00EF7C1C1C39127A00AC214F /* login-button.png in Resources */,
 				00FB8FFE1C3C9B0C006ED82D /* Quote-50-4.png in Resources */,
 				001B7E181C38DCB1006C21C7 /* BorderBase.ttf in Resources */,
