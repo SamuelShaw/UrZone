@@ -25,7 +25,7 @@ class DetectBeaconsViewController: UIViewController, CLLocationManagerDelegate
     let locationManager = CLLocationManager()
     let region = CLBeaconRegion(proximityUUID: NSUUID(UUIDString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D")!, identifier: "EstimoteBeacons")
     
-    var currentUser = PFUser.currentUser()!.username
+    //var currentUser = PFUser.currentUser()!.username
     
     override func viewDidLoad()
     {
@@ -157,23 +157,23 @@ class DetectBeaconsViewController: UIViewController, CLLocationManagerDelegate
     }
     
     
-    @IBAction func signOutButtonPressed(sender: AnyObject)
+    @IBAction func signOutButtonPressed(sender: UIButton)
     {
-       // self.locationManager.stopUpdatingLocation()
-        PFUser.logOutInBackground()
-       if PFUser.currentUser() == nil
-       {
+       self.locationManager.stopUpdatingLocation()
+        //PFUser.logOutInBackground()
+        //PFUser.logOut()
+      
                         dispatch_async(dispatch_get_main_queue(), { () -> Void in
-        
+                           PFUser.logOut()
                             let viewController: UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("iPhoneStoryboard")
                             self.presentViewController(viewController, animated: true, completion: nil) })
         //self.dismissViewControllerAnimated(true, completion: nil)
 
         
-       }
+    
         
         
-        print("Sign Out Successful")
+        //print("Sign Out Successful")
     }
     
     
