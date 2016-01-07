@@ -61,7 +61,7 @@ class DetectBeaconsViewController: UIViewController, CLLocationManagerDelegate
             let closestBeacon = knownBeacons[0] as CLBeacon
             updateDistance(closestBeacon.proximity)
             self.minorLabel.text = "beacon minor is \(closestBeacon.minor.integerValue)"
-            if closestBeacon.rssi > -75
+            if closestBeacon.rssi > -40
             {
                 if closestBeacon.minor == 22356
                 {
