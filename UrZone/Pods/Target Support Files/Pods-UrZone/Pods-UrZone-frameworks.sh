@@ -85,14 +85,12 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-UrZone/Bolts.framework"
-  install_framework "Pods-UrZone/Cosmos.framework"
   install_framework "Pods-UrZone/Parse.framework"
   install_framework "Pods-UrZone/ParseTwitterUtils.framework"
   install_framework "Pods-UrZone/TextFieldEffects.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-UrZone/Bolts.framework"
-  install_framework "Pods-UrZone/Cosmos.framework"
   install_framework "Pods-UrZone/Parse.framework"
   install_framework "Pods-UrZone/ParseTwitterUtils.framework"
   install_framework "Pods-UrZone/TextFieldEffects.framework"

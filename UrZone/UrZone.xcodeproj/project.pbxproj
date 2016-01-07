@@ -29,6 +29,8 @@
 		001B7E201C38ED19006C21C7 /* signUp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 001B7E1F1C38ED19006C21C7 /* signUp.jpg */; };
 		001B7E2C1C38FAF5006C21C7 /* Add User-52.png in Resources */ = {isa = PBXBuildFile; fileRef = 001B7E2B1C38FAF5006C21C7 /* Add User-52.png */; };
 		0074F13D1C3B7CD100BEFD47 /* Quote-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 0074F13C1C3B7CD100BEFD47 /* Quote-50.png */; };
+		008C929E1C3DFE9700EC2B7A /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008C929C1C3DFE9700EC2B7A /* Fabric.framework */; };
+		008C929F1C3DFE9700EC2B7A /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008C929D1C3DFE9700EC2B7A /* Crashlytics.framework */; };
 		00B212581C260C3D0070E081 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B212571C260C3D0070E081 /* ParseUI.framework */; };
 		00E0AB3D1C1A1EAB00A01934 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0AB3C1C1A1EAB00A01934 /* SignInViewController.swift */; };
 		00E0AB431C1A219C00A01934 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E0AB401C1A219C00A01934 /* Bolts.framework */; };
@@ -89,6 +91,8 @@
 		001B7E1F1C38ED19006C21C7 /* signUp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = signUp.jpg; sourceTree = "<group>"; };
 		001B7E2B1C38FAF5006C21C7 /* Add User-52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Add User-52.png"; sourceTree = "<group>"; };
 		0074F13C1C3B7CD100BEFD47 /* Quote-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quote-50.png"; sourceTree = "<group>"; };
+		008C929C1C3DFE9700EC2B7A /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		008C929D1C3DFE9700EC2B7A /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		00B212571C260C3D0070E081 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = UrZone/ParseUI.framework; sourceTree = "<group>"; };
 		00E0AB3C1C1A1EAB00A01934 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		00E0AB401C1A219C00A01934 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = UrZone/Bolts.framework; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 			files = (
 				00B212581C260C3D0070E081 /* ParseUI.framework in Frameworks */,
 				C37D63CC1C19FE76009C9C66 /* Social.framework in Frameworks */,
+				008C929F1C3DFE9700EC2B7A /* Crashlytics.framework in Frameworks */,
 				000F7A711C21B18B00B89FE2 /* ParseCrashReporting.framework in Frameworks */,
 				C37D63CA1C19FE6F009C9C66 /* Accounts.framework in Frameworks */,
 				B0D6A62A46096A13B9D683D0 /* Pods_UrZone.framework in Frameworks */,
@@ -145,6 +150,7 @@
 				00E0AB4B1C1A2E5500A01934 /* FBSDKLoginKit.framework in Frameworks */,
 				00E0AB441C1A219C00A01934 /* Parse.framework in Frameworks */,
 				00E0AB501C1A3B3300A01934 /* ParseFacebookUtilsV4.framework in Frameworks */,
+				008C929E1C3DFE9700EC2B7A /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +321,8 @@
 		C37D63B61C19FE0D009C9C66 /* UrZone */ = {
 			isa = PBXGroup;
 			children = (
+				008C929C1C3DFE9700EC2B7A /* Fabric.framework */,
+				008C929D1C3DFE9700EC2B7A /* Crashlytics.framework */,
 				0074F1391C3B72EA00BEFD47 /* View Controllers */,
 				00FB900F1C3CC790006ED82D /* Chat Views */,
 				00FB90191C3CC892006ED82D /* Chat Cells */,
@@ -337,6 +345,7 @@
 				C37D63B21C19FE0D009C9C66 /* Resources */,
 				EADF41BA0BDF3120FE6CB270 /* Embed Pods Frameworks */,
 				84E51D428B64F06F0F9AAD42 /* Copy Pods Resources */,
+				00FB901C1C3DF6A7006ED82D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -412,6 +421,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		00FB901C1C3DF6A7006ED82D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 93d1474f6923a80f9de4e097e90ef59cbfd99a1d e391db6043fb0aea490cdbc127d8b3e4ef4d1bb3ca1d3eba4b55f418a1d6788e";
+		};
 		84E51D428B64F06F0F9AAD42 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -594,6 +616,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/UrZone",
 					"$(PROJECT_DIR)",
@@ -614,6 +637,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/UrZone",
 					"$(PROJECT_DIR)",
