@@ -31,6 +31,7 @@
 		0074F13D1C3B7CD100BEFD47 /* Quote-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 0074F13C1C3B7CD100BEFD47 /* Quote-50.png */; };
 		008C929E1C3DFE9700EC2B7A /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008C929C1C3DFE9700EC2B7A /* Fabric.framework */; };
 		008C929F1C3DFE9700EC2B7A /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008C929D1C3DFE9700EC2B7A /* Crashlytics.framework */; };
+		008C92DD1C3ED69900EC2B7A /* Thumb Up-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 008C92DC1C3ED69900EC2B7A /* Thumb Up-48.png */; };
 		00B212581C260C3D0070E081 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B212571C260C3D0070E081 /* ParseUI.framework */; };
 		00E0AB3D1C1A1EAB00A01934 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0AB3C1C1A1EAB00A01934 /* SignInViewController.swift */; };
 		00E0AB431C1A219C00A01934 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E0AB401C1A219C00A01934 /* Bolts.framework */; };
@@ -91,8 +92,9 @@
 		001B7E1F1C38ED19006C21C7 /* signUp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = signUp.jpg; sourceTree = "<group>"; };
 		001B7E2B1C38FAF5006C21C7 /* Add User-52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Add User-52.png"; sourceTree = "<group>"; };
 		0074F13C1C3B7CD100BEFD47 /* Quote-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quote-50.png"; sourceTree = "<group>"; };
-		008C929C1C3DFE9700EC2B7A /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
-		008C929D1C3DFE9700EC2B7A /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		008C929C1C3DFE9700EC2B7A /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = UrZone/Fabric.framework; sourceTree = "<group>"; };
+		008C929D1C3DFE9700EC2B7A /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = UrZone/Crashlytics.framework; sourceTree = "<group>"; };
+		008C92DC1C3ED69900EC2B7A /* Thumb Up-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Thumb Up-48.png"; sourceTree = "<group>"; };
 		00B212571C260C3D0070E081 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = UrZone/ParseUI.framework; sourceTree = "<group>"; };
 		00E0AB3C1C1A1EAB00A01934 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		00E0AB401C1A219C00A01934 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = UrZone/Bolts.framework; sourceTree = "<group>"; };
@@ -189,6 +191,8 @@
 		001F74E41C1A018100D9C33F /* Abandoned Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				008C929C1C3DFE9700EC2B7A /* Fabric.framework */,
+				008C929D1C3DFE9700EC2B7A /* Crashlytics.framework */,
 				00B212571C260C3D0070E081 /* ParseUI.framework */,
 				000F7A701C21B18B00B89FE2 /* ParseCrashReporting.framework */,
 				00E0AB471C1A2E5500A01934 /* FBSDKCoreKit.framework */,
@@ -231,6 +235,7 @@
 		00E0AB461C1A21C100A01934 /* Dem PNGs */ = {
 			isa = PBXGroup;
 			children = (
+				008C92DC1C3ED69900EC2B7A /* Thumb Up-48.png */,
 				001B7E191C38EAC7006C21C7 /* urZoneBackground.jpg */,
 				00FB90051C3CAEA3006ED82D /* Quote-50-8.png */,
 				00FB8FFD1C3C9B0C006ED82D /* Quote-50-4.png */,
@@ -321,8 +326,6 @@
 		C37D63B61C19FE0D009C9C66 /* UrZone */ = {
 			isa = PBXGroup;
 			children = (
-				008C929C1C3DFE9700EC2B7A /* Fabric.framework */,
-				008C929D1C3DFE9700EC2B7A /* Crashlytics.framework */,
 				0074F1391C3B72EA00BEFD47 /* View Controllers */,
 				00FB900F1C3CC790006ED82D /* Chat Views */,
 				00FB90191C3CC892006ED82D /* Chat Cells */,
@@ -404,6 +407,7 @@
 				C39F31601C2B17BE0003CE99 /* myZoneWav.wav in Resources */,
 				C37D63BF1C19FE0D009C9C66 /* Assets.xcassets in Resources */,
 				00FB901B1C3D7680006ED82D /* UrZoneScreen.png in Resources */,
+				008C92DD1C3ED69900EC2B7A /* Thumb Up-48.png in Resources */,
 				00EF7C1C1C39127A00AC214F /* login-button.png in Resources */,
 				00FB8FFE1C3C9B0C006ED82D /* Quote-50-4.png in Resources */,
 				001B7E181C38DCB1006C21C7 /* BorderBase.ttf in Resources */,

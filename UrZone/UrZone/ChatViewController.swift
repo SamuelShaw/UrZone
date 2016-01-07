@@ -121,8 +121,15 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.chatUser.text = currentData[indexPath.row]["username"]!
         cell.chatText.text = currentData[indexPath.row]["text"]!
         
+        cell.userVotesLabel.text = currentData[indexPath.row] ["votes"]!
+        
         let radius = cell.roundView.frame.height / 2
         cell.roundView.layer.cornerRadius = radius
+        
+        
+        let votes = Int((currentData[indexPath.row]["votes"] ?? "0")!)
+
+        cell.userVotesLabel?.text = "\(votes!) votes"
         
         return cell
     }
