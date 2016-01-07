@@ -124,8 +124,9 @@ class WindowChatViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     @IBAction func windowSend() {
+        //test
         let obj = PFObject(className: "WindowChat")
-        currentSessionUN = (PFusernameString as? String)!
+        currentSessionUN = (PFUser.currentUser()?.username)!   //(PFusernameString as? String)!
         obj.setObject(currentSessionUN, forKey: "username")
         
         obj.setObject(windowMessageTextfield.text!, forKey: "text")

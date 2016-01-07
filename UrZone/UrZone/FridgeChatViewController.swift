@@ -124,7 +124,7 @@ class FridgeChatViewController: UIViewController, UITableViewDelegate, UITableVi
     
     @IBAction func fridgeSend() {
         let obj = PFObject(className: "FridgeChat")
-        currentSessionUN = (PFusernameString as? String)!
+        currentSessionUN = (PFUser.currentUser()?.username)!   //(PFusernameString as? String)!
         obj.setObject(currentSessionUN, forKey: "username")
         
         obj.setObject(fridgeMessageTextfield.text!, forKey: "text")
