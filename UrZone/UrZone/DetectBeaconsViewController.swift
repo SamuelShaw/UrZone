@@ -25,6 +25,8 @@ class DetectBeaconsViewController: UIViewController, CLLocationManagerDelegate
     let locationManager = CLLocationManager()
     let region = CLBeaconRegion(proximityUUID: NSUUID(UUIDString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D")!, identifier: "EstimoteBeacons")
     
+    var currentUser = PFUser.currentUser()!.username
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -61,7 +63,7 @@ class DetectBeaconsViewController: UIViewController, CLLocationManagerDelegate
             let closestBeacon = knownBeacons[0] as CLBeacon
             updateDistance(closestBeacon.proximity)
             self.minorLabel.text = "beacon minor is \(closestBeacon.minor.integerValue)"
-            if closestBeacon.rssi > -75
+            if closestBeacon.rssi > -60
             {
                 if closestBeacon.minor == 22356
                 {
@@ -158,16 +160,18 @@ class DetectBeaconsViewController: UIViewController, CLLocationManagerDelegate
     @IBAction func signOutButtonPressed(sender: AnyObject)
     {
         self.locationManager.stopUpdatingLocation()
-        PFUser.logOut()
-        
-                        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+        PFUser.logOutInBackgroundWithBlock() { (error: NSError?) -> Void in if error != nil { print("logout fail") } else { print("logout success") } }
+       if PFUser.currentUser() == nil
+       {
+                        //dispatch_async(dispatch_get_main_queue(), { () -> Void in
         
                             let viewController: UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("iPhoneStoryboard")
-                            self.presentViewController(viewController, animated: true, completion: nil) })
-        
+                            self.presentViewController(viewController, animated: true, completion: nil) //})
+        //self.dismissViewControllerAnimated(true, completion: nil)
 
         
-        //self.dismissViewControllerAnimated(true, completion: nil)
+       }
+        
         
         print("Sign Out Successful")
     }
