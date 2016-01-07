@@ -12,6 +12,9 @@ import Bolts
 import FBSDKCoreKit
 import ParseFacebookUtilsV4
 import ParseTwitterUtils
+import Fabric
+import Crashlytics
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -34,6 +37,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Initialize Twitter
         PFTwitterUtils.initializeWithConsumerKey("5esGcfOx9ymbRCECIp4BQB8xN", consumerSecret: "lMCMnhYa9zcNdPVK7oLDmEYmOS0PImCgJGZqkbrBcrpDN1c8uX")
         
+        // Initialize Crashlytics
+        Fabric.with([Crashlytics.self])
+
         
         return true
     }

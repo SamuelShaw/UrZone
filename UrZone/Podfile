@@ -6,7 +6,6 @@
 target 'UrZone' do
 pod 'Parse'
 pod 'ParseTwitterUtils'
-pod 'Cosmos', '~> 1.1'
 pod "TextFieldEffects"
 end
 
