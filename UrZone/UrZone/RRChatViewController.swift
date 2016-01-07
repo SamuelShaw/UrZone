@@ -68,8 +68,8 @@ class RRChatViewController: UIViewController, UITableViewDelegate, UITableViewDa
         if (knownBeacons.count > 0)
         {
             let closestBeacon = knownBeacons[0] as CLBeacon
-            //if closestBeacon.rssi < -70
-            if closestBeacon.minor == 51273 && closestBeacon.rssi < -75      //closestBeacon.proximity == .Far
+            if closestBeacon.rssi < -70
+            //if closestBeacon.proximity == .Far
             //if closestBeacon.minor == 51273 && closestBeacon.rssi < -70
    
 

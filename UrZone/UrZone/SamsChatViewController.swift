@@ -68,9 +68,8 @@ class SamsChatViewController: UIViewController, UITableViewDelegate, UITableView
         {
             let closestBeacon = knownBeacons[0] as CLBeacon
             //if closestBeacon.rssi < -70
-            
-           if closestBeacon.minor == 24381 && closestBeacon.rssi < -75 // closestBeacon.proximity == .Far
-            //closestBeacon.rssi < -70
+            if closestBeacon.proximity == .Far
+           // if closestBeacon.minor == 24381 && closestBeacon.rssi < -70
 
 
             {

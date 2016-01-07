@@ -73,9 +73,9 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         {
             let closestBeacon = knownBeacons[0] as CLBeacon
             //if closestBeacon.rssi < -70
-            if closestBeacon.minor == 22356 && closestBeacon.rssi < -75    //&&  closestBeacon.proximity == .Far
+            //if closestBeacon.proximity == .Far
             //if closestBeacon.minor == 22356 &&
-              //if  closestBeacon.rssi < -70
+              if  closestBeacon.rssi < -70
             {
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
                     let viewController: UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Detect")
@@ -150,8 +150,6 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
                 self.presentViewController(viewController, animated: true, completion: nil) })
         }
     }
-    
-    
     
     
 }
