@@ -41,7 +41,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate
     {
         super.viewWillDisappear(animated)
         
-        un.text = ""
+        pw.text = ""
     }
     
     override func viewWillAppear(animated: Bool) {
