@@ -129,7 +129,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBAction func send() {
         let obj = PFObject(className: "Chat")
-        currentSessionUN = (PFusernameString as? String)!
+        currentSessionUN = /*(*/ (PFUser.currentUser()?.username)! /* as? String )! */
         obj.setObject(currentSessionUN, forKey: "username")
         
         obj.setObject(messageTextfield.text!, forKey: "text")

@@ -128,7 +128,7 @@ class SamsChatViewController: UIViewController, UITableViewDelegate, UITableView
     
     @IBAction func samsSend() {
         let obj = PFObject(className: "SamsChat")
-        currentSessionUN = (PFusernameString as? String)!
+        currentSessionUN = (PFUser.currentUser()?.username)!      //(PFusernameString as? String)!
         obj.setObject(currentSessionUN, forKey: "username")
         
         obj.setObject(samsMessageTextfield.text!, forKey: "text")

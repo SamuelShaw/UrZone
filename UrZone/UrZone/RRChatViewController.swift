@@ -126,7 +126,7 @@ class RRChatViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     @IBAction func rrSend() {
         let obj = PFObject(className: "RestroomChat")
-        currentSessionUN = (PFusernameString as? String)!
+        currentSessionUN = (PFUser.currentUser()?.username)!      //(PFusernameString as? String)!
         obj.setObject(currentSessionUN, forKey: "username")
         
         obj.setObject(rrMessageTextfield.text!, forKey: "text")
