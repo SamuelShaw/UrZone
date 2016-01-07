@@ -1,25 +1,20 @@
 //
-//  ChatViewController.swift
+//  SamsChatViewController.swift
 //  UrZone
 //
-//  Created by Samuel Shaw on 12/16/15.
-//  Copyright © 2015 The Iron Yard. All rights reserved.
+//  Created by Samuel Shaw on 1/5/16.
+//  Copyright © 2016 The Iron Yard. All rights reserved.
 //
 
 import UIKit
 import Parse
 
-let PFusernameString = PFUser.currentUser()!.objectForKey("username")
-
-var currentSessionUN =  ""
-var currentSessionPW = ""
-
-class ChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate, CLLocationManagerDelegate
+class SamsChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate, CLLocationManagerDelegate
 {
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var samsTableView: UITableView!
     
-    @IBOutlet weak var messageTextfield: UITextField!
+    @IBOutlet weak var samsMessageTextfield: UITextField!
     
     
     var counterNumber = 0
@@ -32,9 +27,9 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     var currentData: [[String: String]] = []
     
+    
     let locationManager = CLLocationManager()
     let region = CLBeaconRegion(proximityUUID: NSUUID(UUIDString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D")!, identifier: "EstimoteBeacons")
-    
     
     
     override func viewDidLoad()
@@ -42,10 +37,10 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
+        self.samsTableView.delegate = self
+        self.samsTableView.dataSource = self
         
-        self.messageTextfield.delegate = self
+        self.samsMessageTextfield.delegate = self
         
         updateTimer = NSTimer.scheduledTimerWithTimeInterval(updateDelay, target: self, selector: "update", userInfo: nil, repeats: true)
         
@@ -73,9 +68,10 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         {
             let closestBeacon = knownBeacons[0] as CLBeacon
             //if closestBeacon.rssi < -70
-            //if closestBeacon.proximity == .Far
-            //if closestBeacon.minor == 22356 &&
-              if  closestBeacon.rssi < -70
+            if closestBeacon.proximity == .Far
+           // if closestBeacon.minor == 24381 && closestBeacon.rssi < -70
+
+
             {
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
                     let viewController: UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Detect")
@@ -83,7 +79,6 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
         }
     }
-    
     
     func didTapView()
     {
@@ -95,8 +90,9 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         return false
     }
     
-    func update() {
-        let query = PFQuery(className: "Chat")
+    func update()
+    {
+        let query = PFQuery(className: "SamsChat")
         query.limit = 1000
         let objects = try! query.findObjects()
         currentData = []
@@ -107,7 +103,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
             currentData.append(finalDictionary)
         }
         currentData = currentData.reverse()
-        tableView.reloadData()
+        samsTableView.reloadData()
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
@@ -117,24 +113,27 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
-        let cell = tableView.dequeueReusableCellWithIdentifier("CustomChatCell") as! ChatCell
-        cell.chatUser.text = currentData[indexPath.row]["username"]!
-        cell.chatText.text = currentData[indexPath.row]["text"]!
+        let cell = tableView.dequeueReusableCellWithIdentifier("SamsChatCell") as! SamsTableViewCell
+        cell.samsChatUser.text = currentData[indexPath.row]["username"]!
+        cell.samsChatText.text = currentData[indexPath.row]["text"]!
         
-        let radius = cell.roundView.frame.height / 2
-        cell.roundView.layer.cornerRadius = radius
+        let radius = cell.samsRoundView.frame.height / 2
+        cell.samsRoundView.layer.cornerRadius = radius
+        
+        let hue = 1 / CGFloat(currentData.count) * CGFloat(indexPath.row)
+        cell.samsRoundView.backgroundColor = UIColor(hue: hue, saturation: 1, brightness: 1, alpha: 1)
         
         return cell
     }
     
-    @IBAction func send() {
-        let obj = PFObject(className: "Chat")
+    @IBAction func samsSend() {
+        let obj = PFObject(className: "SamsChat")
         currentSessionUN = (PFusernameString as? String)!
         obj.setObject(currentSessionUN, forKey: "username")
         
-        obj.setObject(messageTextfield.text!, forKey: "text")
+        obj.setObject(samsMessageTextfield.text!, forKey: "text")
         try! obj.save()
-        messageTextfield.text = ""
+        samsMessageTextfield.text = ""
         self.view.endEditing(true)
-    }    
+    }
 }

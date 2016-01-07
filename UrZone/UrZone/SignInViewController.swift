@@ -37,6 +37,13 @@ class SignInViewController: UIViewController, UITextFieldDelegate
 
     }
     
+    override func viewWillDisappear(animated: Bool)
+    {
+        super.viewWillDisappear(animated)
+        
+        un.text = ""
+    }
+    
     override func viewWillAppear(animated: Bool) {
         if (PFUser.currentUser() != nil) {
             print ("\(PFUser.currentUser)")

@@ -1,25 +1,20 @@
 //
-//  ChatViewController.swift
+//  RRChatViewController.swift
 //  UrZone
 //
-//  Created by Samuel Shaw on 12/16/15.
-//  Copyright © 2015 The Iron Yard. All rights reserved.
+//  Created by Samuel Shaw on 1/5/16.
+//  Copyright © 2016 The Iron Yard. All rights reserved.
 //
 
 import UIKit
 import Parse
 
-let PFusernameString = PFUser.currentUser()!.objectForKey("username")
-
-var currentSessionUN =  ""
-var currentSessionPW = ""
-
-class ChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate, CLLocationManagerDelegate
+class RRChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate, CLLocationManagerDelegate
 {
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var rrTableView: UITableView!
     
-    @IBOutlet weak var messageTextfield: UITextField!
+    @IBOutlet weak var rrMessageTextfield: UITextField!
     
     
     var counterNumber = 0
@@ -42,10 +37,10 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
+        self.rrTableView.delegate = self
+        self.rrTableView.dataSource = self
         
-        self.messageTextfield.delegate = self
+        self.rrMessageTextfield.delegate = self
         
         updateTimer = NSTimer.scheduledTimerWithTimeInterval(updateDelay, target: self, selector: "update", userInfo: nil, repeats: true)
         
@@ -56,6 +51,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         
         locationManager.startRangingBeaconsInRegion(region)
+
         
         print ("\(PFusernameString)")
         
@@ -72,10 +68,11 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         if (knownBeacons.count > 0)
         {
             let closestBeacon = knownBeacons[0] as CLBeacon
-            //if closestBeacon.rssi < -70
+            if closestBeacon.rssi < -70
             //if closestBeacon.proximity == .Far
-            //if closestBeacon.minor == 22356 &&
-              if  closestBeacon.rssi < -70
+            //if closestBeacon.minor == 51273 && closestBeacon.rssi < -70
+   
+
             {
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
                     let viewController: UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Detect")
@@ -83,7 +80,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
         }
     }
-    
+
     
     func didTapView()
     {
@@ -96,7 +93,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func update() {
-        let query = PFQuery(className: "Chat")
+        let query = PFQuery(className: "RestroomChat")
         query.limit = 1000
         let objects = try! query.findObjects()
         currentData = []
@@ -107,7 +104,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
             currentData.append(finalDictionary)
         }
         currentData = currentData.reverse()
-        tableView.reloadData()
+        rrTableView.reloadData()
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
@@ -117,24 +114,24 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
-        let cell = tableView.dequeueReusableCellWithIdentifier("CustomChatCell") as! ChatCell
-        cell.chatUser.text = currentData[indexPath.row]["username"]!
-        cell.chatText.text = currentData[indexPath.row]["text"]!
+        let cell = tableView.dequeueReusableCellWithIdentifier("RRChatCell") as! RRTableViewCell
+        cell.rrChatUser.text = currentData[indexPath.row]["username"]!
+        cell.rrChatText.text = currentData[indexPath.row]["text"]!
         
-        let radius = cell.roundView.frame.height / 2
-        cell.roundView.layer.cornerRadius = radius
+        let radius = cell.rrRoundView.frame.height / 2
+        cell.rrRoundView.layer.cornerRadius = radius
         
         return cell
     }
     
-    @IBAction func send() {
-        let obj = PFObject(className: "Chat")
+    @IBAction func rrSend() {
+        let obj = PFObject(className: "RestroomChat")
         currentSessionUN = (PFusernameString as? String)!
         obj.setObject(currentSessionUN, forKey: "username")
         
-        obj.setObject(messageTextfield.text!, forKey: "text")
+        obj.setObject(rrMessageTextfield.text!, forKey: "text")
         try! obj.save()
-        messageTextfield.text = ""
+        rrMessageTextfield.text = ""
         self.view.endEditing(true)
-    }    
+    }
 }

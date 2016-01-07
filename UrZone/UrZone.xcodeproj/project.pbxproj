@@ -29,7 +29,6 @@
 		001B7E201C38ED19006C21C7 /* signUp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 001B7E1F1C38ED19006C21C7 /* signUp.jpg */; };
 		001B7E2C1C38FAF5006C21C7 /* Add User-52.png in Resources */ = {isa = PBXBuildFile; fileRef = 001B7E2B1C38FAF5006C21C7 /* Add User-52.png */; };
 		0074F13D1C3B7CD100BEFD47 /* Quote-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 0074F13C1C3B7CD100BEFD47 /* Quote-50.png */; };
-		0074F1821C3C2F9E00BEFD47 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 0074F1761C3C2F9E00BEFD47 /* Contents.json */; };
 		00B212581C260C3D0070E081 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B212571C260C3D0070E081 /* ParseUI.framework */; };
 		00E0AB3D1C1A1EAB00A01934 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E0AB3C1C1A1EAB00A01934 /* SignInViewController.swift */; };
 		00E0AB431C1A219C00A01934 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E0AB401C1A219C00A01934 /* Bolts.framework */; };
@@ -41,6 +40,19 @@
 		00E779E81C39E20500176802 /* 1451884235_Lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E779E61C39E20500176802 /* 1451884235_Lock.png */; };
 		00E779EA1C39EDF000176802 /* PasswordRecoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E779E91C39EDF000176802 /* PasswordRecoverViewController.swift */; };
 		00EF7C1C1C39127A00AC214F /* login-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EF7C1B1C39127A00AC214F /* login-button.png */; };
+		00FB8FFE1C3C9B0C006ED82D /* Quote-50-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 00FB8FFD1C3C9B0C006ED82D /* Quote-50-4.png */; };
+		00FB90021C3CA1C5006ED82D /* Quote-50-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 00FB90011C3CA1C5006ED82D /* Quote-50-6.png */; };
+		00FB90041C3CA6AC006ED82D /* Quote-50-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 00FB90031C3CA6AC006ED82D /* Quote-50-7.png */; };
+		00FB90061C3CAEA3006ED82D /* Quote-50-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 00FB90051C3CAEA3006ED82D /* Quote-50-8.png */; };
+		00FB90081C3CC723006ED82D /* FridgeChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FB90071C3CC723006ED82D /* FridgeChatViewController.swift */; };
+		00FB900A1C3CC73D006ED82D /* WindowChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FB90091C3CC73D006ED82D /* WindowChatViewController.swift */; };
+		00FB900C1C3CC75E006ED82D /* RRChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FB900B1C3CC75E006ED82D /* RRChatViewController.swift */; };
+		00FB900E1C3CC776006ED82D /* SamsChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FB900D1C3CC776006ED82D /* SamsChatViewController.swift */; };
+		00FB90121C3CC817006ED82D /* FridgeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FB90111C3CC817006ED82D /* FridgeTableViewCell.swift */; };
+		00FB90141C3CC826006ED82D /* WindowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FB90131C3CC826006ED82D /* WindowTableViewCell.swift */; };
+		00FB90161C3CC838006ED82D /* SamsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FB90151C3CC838006ED82D /* SamsTableViewCell.swift */; };
+		00FB90181C3CC889006ED82D /* RRTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FB90171C3CC889006ED82D /* RRTableViewCell.swift */; };
+		00FB901B1C3D7680006ED82D /* UrZoneScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 00FB901A1C3D7680006ED82D /* UrZoneScreen.png */; };
 		B0D6A62A46096A13B9D683D0 /* Pods_UrZone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5195FD04410578C494BDA565 /* Pods_UrZone.framework */; };
 		C31F84A31C2AEE2000366BA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C31F84A21C2AEE2000366BA3 /* Main.storyboard */; };
 		C35FBE431C286F530072DFA5 /* ClassicSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35FBE421C286F530072DFA5 /* ClassicSignupViewController.swift */; };
@@ -77,7 +89,6 @@
 		001B7E1F1C38ED19006C21C7 /* signUp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = signUp.jpg; sourceTree = "<group>"; };
 		001B7E2B1C38FAF5006C21C7 /* Add User-52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Add User-52.png"; sourceTree = "<group>"; };
 		0074F13C1C3B7CD100BEFD47 /* Quote-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quote-50.png"; sourceTree = "<group>"; };
-		0074F1761C3C2F9E00BEFD47 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		00B212571C260C3D0070E081 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = UrZone/ParseUI.framework; sourceTree = "<group>"; };
 		00E0AB3C1C1A1EAB00A01934 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		00E0AB401C1A219C00A01934 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = UrZone/Bolts.framework; sourceTree = "<group>"; };
@@ -89,6 +100,19 @@
 		00E779E61C39E20500176802 /* 1451884235_Lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1451884235_Lock.png; sourceTree = "<group>"; };
 		00E779E91C39EDF000176802 /* PasswordRecoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordRecoverViewController.swift; sourceTree = "<group>"; };
 		00EF7C1B1C39127A00AC214F /* login-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-button.png"; sourceTree = "<group>"; };
+		00FB8FFD1C3C9B0C006ED82D /* Quote-50-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quote-50-4.png"; sourceTree = "<group>"; };
+		00FB90011C3CA1C5006ED82D /* Quote-50-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quote-50-6.png"; sourceTree = "<group>"; };
+		00FB90031C3CA6AC006ED82D /* Quote-50-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quote-50-7.png"; sourceTree = "<group>"; };
+		00FB90051C3CAEA3006ED82D /* Quote-50-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quote-50-8.png"; sourceTree = "<group>"; };
+		00FB90071C3CC723006ED82D /* FridgeChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FridgeChatViewController.swift; sourceTree = "<group>"; };
+		00FB90091C3CC73D006ED82D /* WindowChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowChatViewController.swift; sourceTree = "<group>"; };
+		00FB900B1C3CC75E006ED82D /* RRChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RRChatViewController.swift; sourceTree = "<group>"; };
+		00FB900D1C3CC776006ED82D /* SamsChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SamsChatViewController.swift; sourceTree = "<group>"; };
+		00FB90111C3CC817006ED82D /* FridgeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FridgeTableViewCell.swift; sourceTree = "<group>"; };
+		00FB90131C3CC826006ED82D /* WindowTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowTableViewCell.swift; sourceTree = "<group>"; };
+		00FB90151C3CC838006ED82D /* SamsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SamsTableViewCell.swift; sourceTree = "<group>"; };
+		00FB90171C3CC889006ED82D /* RRTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RRTableViewCell.swift; sourceTree = "<group>"; };
+		00FB901A1C3D7680006ED82D /* UrZoneScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UrZoneScreen.png; sourceTree = "<group>"; };
 		5195FD04410578C494BDA565 /* Pods_UrZone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UrZone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C2BDC888042443D29ABD78 /* Pods-UrZone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrZone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UrZone/Pods-UrZone.debug.xcconfig"; sourceTree = "<group>"; };
 		608A0244C9211D69FFC8C5DF /* Pods-UrZone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UrZone.release.xcconfig"; path = "Pods/Target Support Files/Pods-UrZone/Pods-UrZone.release.xcconfig"; sourceTree = "<group>"; };
@@ -187,15 +211,6 @@
 			name = "View Controllers";
 			sourceTree = "<group>";
 		};
-		0074F1751C3C2F9E00BEFD47 /* AppIcon.appiconset */ = {
-			isa = PBXGroup;
-			children = (
-				0074F1761C3C2F9E00BEFD47 /* Contents.json */,
-			);
-			name = AppIcon.appiconset;
-			path = AppIcons.appiconset;
-			sourceTree = "<group>";
-		};
 		0074F1C01C3C315D00BEFD47 /* Defaults */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,8 +226,13 @@
 			isa = PBXGroup;
 			children = (
 				001B7E191C38EAC7006C21C7 /* urZoneBackground.jpg */,
+				00FB90051C3CAEA3006ED82D /* Quote-50-8.png */,
+				00FB8FFD1C3C9B0C006ED82D /* Quote-50-4.png */,
+				00FB90031C3CA6AC006ED82D /* Quote-50-7.png */,
 				001B7E1B1C38EC82006C21C7 /* fbButton.png */,
+				00FB90011C3CA1C5006ED82D /* Quote-50-6.png */,
 				00E779E61C39E20500176802 /* 1451884235_Lock.png */,
+				00FB901A1C3D7680006ED82D /* UrZoneScreen.png */,
 				0074F13C1C3B7CD100BEFD47 /* Quote-50.png */,
 				00EF7C1B1C39127A00AC214F /* login-button.png */,
 				001B7E1D1C38EC8A006C21C7 /* twitterButton.png */,
@@ -220,6 +240,39 @@
 				001B7E1F1C38ED19006C21C7 /* signUp.jpg */,
 			);
 			name = "Dem PNGs";
+			sourceTree = "<group>";
+		};
+		00FB900F1C3CC790006ED82D /* Chat Views */ = {
+			isa = PBXGroup;
+			children = (
+				00FB90071C3CC723006ED82D /* FridgeChatViewController.swift */,
+				00FB900B1C3CC75E006ED82D /* RRChatViewController.swift */,
+				00FB900D1C3CC776006ED82D /* SamsChatViewController.swift */,
+				00FB90091C3CC73D006ED82D /* WindowChatViewController.swift */,
+			);
+			name = "Chat Views";
+			sourceTree = "<group>";
+		};
+		00FB90101C3CC7B7006ED82D /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				C39F315F1C2B17BE0003CE99 /* myZoneWav.wav */,
+				001B7E141C38DCB1006C21C7 /* border_base_future */,
+				001B7DFA1C38D79B006C21C7 /* TextFieldEffects */,
+			);
+			name = Extras;
+			path = UrZone;
+			sourceTree = "<group>";
+		};
+		00FB90191C3CC892006ED82D /* Chat Cells */ = {
+			isa = PBXGroup;
+			children = (
+				00FB90111C3CC817006ED82D /* FridgeTableViewCell.swift */,
+				00FB90171C3CC889006ED82D /* RRTableViewCell.swift */,
+				00FB90151C3CC838006ED82D /* SamsTableViewCell.swift */,
+				00FB90131C3CC826006ED82D /* WindowTableViewCell.swift */,
+			);
+			name = "Chat Cells";
 			sourceTree = "<group>";
 		};
 		347EC20C8725794EBDB7E881 /* Pods */ = {
@@ -243,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				C37D63B61C19FE0D009C9C66 /* UrZone */,
+				00FB90101C3CC7B7006ED82D /* Extras */,
 				C37D63B51C19FE0D009C9C66 /* Products */,
 				A4B9FAA6CF8D5B0B9AAE56B8 /* Frameworks */,
 				001F74E41C1A018100D9C33F /* Abandoned Frameworks */,
@@ -262,11 +316,9 @@
 			isa = PBXGroup;
 			children = (
 				0074F1391C3B72EA00BEFD47 /* View Controllers */,
+				00FB900F1C3CC790006ED82D /* Chat Views */,
+				00FB90191C3CC892006ED82D /* Chat Cells */,
 				0074F1C01C3C315D00BEFD47 /* Defaults */,
-				0074F1751C3C2F9E00BEFD47 /* AppIcon.appiconset */,
-				C39F315F1C2B17BE0003CE99 /* myZoneWav.wav */,
-				001B7E141C38DCB1006C21C7 /* border_base_future */,
-				001B7DFA1C38D79B006C21C7 /* TextFieldEffects */,
 				00E0AB461C1A21C100A01934 /* Dem PNGs */,
 			);
 			path = UrZone;
@@ -336,20 +388,24 @@
 			files = (
 				001B7E2C1C38FAF5006C21C7 /* Add User-52.png in Resources */,
 				001B7E091C38D79B006C21C7 /* Info.plist in Resources */,
-				0074F1821C3C2F9E00BEFD47 /* Contents.json in Resources */,
 				001B7E1C1C38EC82006C21C7 /* fbButton.png in Resources */,
 				C37D63C21C19FE0D009C9C66 /* LaunchScreen.storyboard in Resources */,
 				001B7E171C38DCB1006C21C7 /* BorderBase Italic.ttf in Resources */,
 				C31F84A31C2AEE2000366BA3 /* Main.storyboard in Resources */,
 				C39F31601C2B17BE0003CE99 /* myZoneWav.wav in Resources */,
 				C37D63BF1C19FE0D009C9C66 /* Assets.xcassets in Resources */,
+				00FB901B1C3D7680006ED82D /* UrZoneScreen.png in Resources */,
 				00EF7C1C1C39127A00AC214F /* login-button.png in Resources */,
+				00FB8FFE1C3C9B0C006ED82D /* Quote-50-4.png in Resources */,
 				001B7E181C38DCB1006C21C7 /* BorderBase.ttf in Resources */,
 				00E779E81C39E20500176802 /* 1451884235_Lock.png in Resources */,
+				00FB90041C3CA6AC006ED82D /* Quote-50-7.png in Resources */,
 				001B7E1E1C38EC8A006C21C7 /* twitterButton.png in Resources */,
 				001B7E1A1C38EAC7006C21C7 /* urZoneBackground.jpg in Resources */,
 				001B7E201C38ED19006C21C7 /* signUp.jpg in Resources */,
 				0074F13D1C3B7CD100BEFD47 /* Quote-50.png in Resources */,
+				00FB90021C3CA1C5006ED82D /* Quote-50-6.png in Resources */,
+				00FB90061C3CAEA3006ED82D /* Quote-50-8.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,9 +464,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00FB900C1C3CC75E006ED82D /* RRChatViewController.swift in Sources */,
+				00FB90181C3CC889006ED82D /* RRTableViewCell.swift in Sources */,
+				00FB90161C3CC838006ED82D /* SamsTableViewCell.swift in Sources */,
+				00FB900E1C3CC776006ED82D /* SamsChatViewController.swift in Sources */,
 				001B7E111C38D79B006C21C7 /* YoshikoTextField.swift in Sources */,
 				00E779EA1C39EDF000176802 /* PasswordRecoverViewController.swift in Sources */,
 				C35FBE431C286F530072DFA5 /* ClassicSignupViewController.swift in Sources */,
+				00FB900A1C3CC73D006ED82D /* WindowChatViewController.swift in Sources */,
 				001B7E0B1C38D79B006C21C7 /* JiroTextField.swift in Sources */,
 				001B7E0C1C38D79B006C21C7 /* KaedeTextField.swift in Sources */,
 				C37D63B81C19FE0D009C9C66 /* AppDelegate.swift in Sources */,
@@ -420,9 +481,12 @@
 				001B7E0D1C38D79B006C21C7 /* MadokaTextField.swift in Sources */,
 				000F7A751C21BD1600B89FE2 /* ChatCell.swift in Sources */,
 				C3E3EF561C29B0D20014CD16 /* DetectBeaconsViewController.swift in Sources */,
+				00FB90141C3CC826006ED82D /* WindowTableViewCell.swift in Sources */,
 				001B7E0F1C38D79B006C21C7 /* TextFieldsEffects.swift in Sources */,
 				001B7E101C38D79B006C21C7 /* YokoTextField.swift in Sources */,
 				001B7E0A1C38D79B006C21C7 /* IsaoTextField.swift in Sources */,
+				00FB90121C3CC817006ED82D /* FridgeTableViewCell.swift in Sources */,
+				00FB90081C3CC723006ED82D /* FridgeChatViewController.swift in Sources */,
 				000F7A731C21B98500B89FE2 /* ChatViewController.swift in Sources */,
 				00E0AB3D1C1A1EAB00A01934 /* SignInViewController.swift in Sources */,
 			);
