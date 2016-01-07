@@ -157,9 +157,17 @@ class DetectBeaconsViewController: UIViewController, CLLocationManagerDelegate
     
     @IBAction func signOutButtonPressed(sender: AnyObject)
     {
+        self.locationManager.stopUpdatingLocation()
         PFUser.logOut()
         
-        self.dismissViewControllerAnimated(true, completion: nil)
+                        dispatch_async(dispatch_get_main_queue(), { () -> Void in
+        
+                            let viewController: UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("iPhoneStoryboard")
+                            self.presentViewController(viewController, animated: true, completion: nil) })
+        
+
+        
+        //self.dismissViewControllerAnimated(true, completion: nil)
         
         print("Sign Out Successful")
     }
