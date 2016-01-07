@@ -371,14 +371,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="💈Door Chat💈 💬" id="ZOt-Fm-Piq">
-                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="9Sl-Xg-Pxe">
-                            <color key="tintColor" red="0.3921568627" green="0.08235294118" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="logoutPressed:" destination="n8U-Jx-HhO" id="ZiN-Pl-AIB"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="💈Door Chat💈 💬" id="ZOt-Fm-Piq"/>
                     <connections>
                         <outlet property="messageTextfield" destination="94M-KO-WFw" id="tcS-J3-1yS"/>
                         <outlet property="tableView" destination="Z1t-3b-mNf" id="UoU-As-Xqm"/>
@@ -1018,14 +1011,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Fridge Chat 🍗🍕🍨🍹" id="SYp-vR-nNJ">
-                        <barButtonItem key="rightBarButtonItem" title="Logout" id="P2b-a7-4pM">
-                            <color key="tintColor" red="0.28235294119999998" green="0.42745098040000001" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="fridgeLogoutPressed:" destination="yPb-oE-jcv" id="nVg-Ei-yKV"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Fridge Chat 🍗🍕🍨🍹" id="SYp-vR-nNJ"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="fridgeMessageTextfield" destination="ifg-MK-aJm" id="PnP-UK-U0I"/>
@@ -1184,14 +1170,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Restroom Chat 🚽💩♿🚻" id="ykp-mP-Xpy">
-                        <barButtonItem key="rightBarButtonItem" title="Logout" id="Itq-YU-b9Z">
-                            <color key="tintColor" red="0.52244383096694946" green="0.4869348406791687" blue="0.45831233263015747" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <action selector="rrLogoutPressed:" destination="0Ik-ww-bXj" id="2Qp-FW-V2Q"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Restroom Chat 🚽💩♿🚻" id="ykp-mP-Xpy"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="rrMessageTextfield" destination="Z0F-7w-vUx" id="vlU-Hz-e8X"/>
@@ -1336,14 +1315,7 @@
                             <constraint firstItem="cH6-2o-8np" firstAttribute="top" secondItem="uUr-uA-kWM" secondAttribute="bottom" constant="8" id="wmJ-0P-2iG"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Window Chat 🚒🚶🚗🚄" id="JSc-oz-Ucx">
-                        <barButtonItem key="rightBarButtonItem" title="Logout" id="0Ue-LZ-9lw">
-                            <color key="tintColor" red="0.24313725489999999" green="0.58039215690000001" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
-                            <connections>
-                                <action selector="windowLogoutPressed:" destination="8Lf-Sx-zpE" id="VZX-NQ-1Yt"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Window Chat 🚒🚶🚗🚄" id="JSc-oz-Ucx"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="windowMessageTextfield" destination="cH6-2o-8np" id="Bll-O7-25E"/>
@@ -1479,14 +1451,7 @@
                             <constraint firstItem="zlA-3k-GbP" firstAttribute="leading" secondItem="lpq-Jn-uJ1" secondAttribute="leading" id="zxA-w9-bHQ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Sam's Chat 😏🕴♎📱" id="oj9-bE-fiQ">
-                        <barButtonItem key="rightBarButtonItem" title="Logout" id="7Fc-hG-oND">
-                            <color key="tintColor" red="0.88432139158248901" green="0.54948192834854126" blue="0.28079581260681152" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <action selector="samsLogoutPressed:" destination="cRL-gF-rpg" id="N99-2W-Kwf"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Sam's Chat 😏🕴♎📱" id="oj9-bE-fiQ"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="samsMessageTextfield" destination="ENT-Te-z1F" id="mCU-m7-tvq"/>
