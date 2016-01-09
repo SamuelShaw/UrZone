@@ -91,8 +91,8 @@
 		001B7E1F1C38ED19006C21C7 /* signUp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = signUp.jpg; sourceTree = "<group>"; };
 		001B7E2B1C38FAF5006C21C7 /* Add User-52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Add User-52.png"; sourceTree = "<group>"; };
 		0074F13C1C3B7CD100BEFD47 /* Quote-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Quote-50.png"; sourceTree = "<group>"; };
-		008C929C1C3DFE9700EC2B7A /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
-		008C929D1C3DFE9700EC2B7A /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		008C929C1C3DFE9700EC2B7A /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = UrZone/Fabric.framework; sourceTree = "<group>"; };
+		008C929D1C3DFE9700EC2B7A /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = UrZone/Crashlytics.framework; sourceTree = "<group>"; };
 		00B212571C260C3D0070E081 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = UrZone/ParseUI.framework; sourceTree = "<group>"; };
 		00E0AB3C1C1A1EAB00A01934 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		00E0AB401C1A219C00A01934 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = UrZone/Bolts.framework; sourceTree = "<group>"; };
@@ -293,6 +293,8 @@
 		A4B9FAA6CF8D5B0B9AAE56B8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				008C929C1C3DFE9700EC2B7A /* Fabric.framework */,
+				008C929D1C3DFE9700EC2B7A /* Crashlytics.framework */,
 				5195FD04410578C494BDA565 /* Pods_UrZone.framework */,
 			);
 			name = Frameworks;
@@ -321,8 +323,6 @@
 		C37D63B61C19FE0D009C9C66 /* UrZone */ = {
 			isa = PBXGroup;
 			children = (
-				008C929C1C3DFE9700EC2B7A /* Fabric.framework */,
-				008C929D1C3DFE9700EC2B7A /* Crashlytics.framework */,
 				0074F1391C3B72EA00BEFD47 /* View Controllers */,
 				00FB900F1C3CC790006ED82D /* Chat Views */,
 				00FB90191C3CC892006ED82D /* Chat Cells */,
@@ -368,7 +368,7 @@
 				TargetAttributes = {
 					C37D63B31C19FE0D009C9C66 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = BBMX4YUNT7;
+						DevelopmentTeam = G9WMWPLR5N;
 					};
 				};
 			};
@@ -623,7 +623,7 @@
 				);
 				INFOPLIST_FILE = UrZone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tiiy.UrZonePhil;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiiiy.UrZonePhil;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -644,7 +644,7 @@
 				);
 				INFOPLIST_FILE = UrZone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tiiy.UrZonePhil;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiiiy.UrZonePhil;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;

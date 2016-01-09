@@ -122,6 +122,7 @@ class SamsChatViewController: UIViewController, UITableViewDelegate, UITableView
         
         let hue = 1 / CGFloat(currentData.count) * CGFloat(indexPath.row)
         cell.samsRoundView.backgroundColor = UIColor(hue: hue, saturation: 1, brightness: 1, alpha: 1)
+        cell.samsChatText.backgroundColor = UIColor(hue: hue, saturation: 1, brightness: 1, alpha: 1)
         
         return cell
     }
