@@ -147,8 +147,10 @@ class RRChatViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 self.presentViewController(viewController, animated: true, completion: nil) })
         }
     }
-
     
-    
+    @IBAction func backButtonPressed(sender: AnyObject)
+    {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     
 }

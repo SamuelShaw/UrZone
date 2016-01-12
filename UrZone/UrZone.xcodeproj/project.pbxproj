@@ -209,9 +209,7 @@
 				C37D63B71C19FE0D009C9C66 /* AppDelegate.swift */,
 				00E0AB3C1C1A1EAB00A01934 /* SignInViewController.swift */,
 				C35FBE421C286F530072DFA5 /* ClassicSignupViewController.swift */,
-				000F7A721C21B98500B89FE2 /* ChatViewController.swift */,
 				C3E3EF551C29B0D20014CD16 /* DetectBeaconsViewController.swift */,
-				000F7A741C21BD1600B89FE2 /* ChatCell.swift */,
 				00E779E91C39EDF000176802 /* PasswordRecoverViewController.swift */,
 			);
 			name = "View Controllers";
@@ -251,6 +249,7 @@
 		00FB900F1C3CC790006ED82D /* Chat Views */ = {
 			isa = PBXGroup;
 			children = (
+				000F7A721C21B98500B89FE2 /* ChatViewController.swift */,
 				00FB90071C3CC723006ED82D /* FridgeChatViewController.swift */,
 				00FB900B1C3CC75E006ED82D /* RRChatViewController.swift */,
 				00FB900D1C3CC776006ED82D /* SamsChatViewController.swift */,
@@ -273,6 +272,7 @@
 		00FB90191C3CC892006ED82D /* Chat Cells */ = {
 			isa = PBXGroup;
 			children = (
+				000F7A741C21BD1600B89FE2 /* ChatCell.swift */,
 				00FB90111C3CC817006ED82D /* FridgeTableViewCell.swift */,
 				00FB90171C3CC889006ED82D /* RRTableViewCell.swift */,
 				00FB90151C3CC838006ED82D /* SamsTableViewCell.swift */,

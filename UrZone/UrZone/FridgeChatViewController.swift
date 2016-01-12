@@ -146,6 +146,9 @@ class FridgeChatViewController: UIViewController, UITableViewDelegate, UITableVi
         }
     }
     
-    
-    
+
+    @IBAction func backButtonPressed(sender: AnyObject)
+    {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
 }
