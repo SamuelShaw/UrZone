@@ -246,7 +246,7 @@
                                                                 <constraint firstAttribute="height" constant="21" id="fJB-m5-8dZ"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                                            <color key="textColor" red="0.61960784313725492" green="0.51372549019607838" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Gn4-jp-jnj">
@@ -257,10 +257,10 @@
                                                                 <constraint firstAttribute="height" constant="78" id="6ZW-bX-15J"/>
                                                                 <constraint firstAttribute="width" constant="307" id="Len-Wt-tg6"/>
                                                             </constraints>
-                                                            <color key="textColor" red="0.95686274509803926" green="0.95686274509803926" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                            <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                                                            <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
                                                         </textView>
                                                     </subviews>
                                                     <animations/>
@@ -916,7 +916,6 @@
                                                                 <constraint firstAttribute="height" constant="21" id="S0e-De-JYD"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                                            <color key="textColor" red="0.60392156862745094" green="0.88627450980392153" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                             <variation key="default">
                                                                 <mask key="constraints">
@@ -932,9 +931,10 @@
                                                                 <constraint firstAttribute="height" constant="78" id="Kyd-po-Ou1"/>
                                                                 <constraint firstAttribute="width" constant="307" id="RvQ-qP-ug1"/>
                                                             </constraints>
-                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
                                                         </textView>
                                                     </subviews>
                                                     <animations/>
@@ -1080,7 +1080,6 @@
                                                                 <constraint firstAttribute="height" constant="21" id="ppy-IF-LTh"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                                            <color key="textColor" red="0.85958623886108398" green="0.73697394132614136" blue="0.80997425317764282" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XiT-B2-Imh">
@@ -1091,9 +1090,10 @@
                                                                 <constraint firstAttribute="width" constant="307" id="Djm-uF-b63"/>
                                                                 <constraint firstAttribute="height" constant="78" id="e3b-Rc-L3R"/>
                                                             </constraints>
-                                                            <color key="textColor" red="0.74509803921568629" green="0.71372549019607845" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
                                                         </textView>
                                                     </subviews>
                                                     <animations/>
@@ -1244,7 +1244,6 @@
                                                                 <constraint firstAttribute="height" constant="21" id="sk0-RU-3eC"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                                            <color key="textColor" red="0.89368224143981934" green="0.60579013824462891" blue="0.83886617422103882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="c6u-Q8-O5o">
@@ -1255,9 +1254,9 @@
                                                                 <constraint firstAttribute="height" constant="78" id="8l7-eQ-U2L"/>
                                                                 <constraint firstAttribute="width" constant="307" id="Qat-bF-Pya"/>
                                                             </constraints>
-                                                            <color key="textColor" red="0.25098039215686274" green="0.1803921568627451" blue="0.14509803921568629" alpha="1" colorSpace="calibratedRGB"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
                                                         </textView>
                                                     </subviews>
                                                     <animations/>

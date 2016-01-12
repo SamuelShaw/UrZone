@@ -120,6 +120,10 @@ class WindowChatViewController: UIViewController, UITableViewDelegate, UITableVi
         let radius = cell.windowRoundView.frame.height / 2
         cell.windowRoundView.layer.cornerRadius = radius
         
+        let hue = 1 / CGFloat(currentData.count) * CGFloat(indexPath.row)
+        cell.windowRoundView.backgroundColor = UIColor(hue: hue, saturation: 1, brightness: 1, alpha: 1)
+        cell.windowChatText.backgroundColor = UIColor(hue: hue, saturation: 1, brightness: 1, alpha: 1)
+        
         return cell
     }
     

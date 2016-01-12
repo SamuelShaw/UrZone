@@ -121,6 +121,10 @@ class RRChatViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let radius = cell.rrRoundView.frame.height / 2
         cell.rrRoundView.layer.cornerRadius = radius
         
+        let hue = 1 / CGFloat(currentData.count) * CGFloat(indexPath.row)
+        cell.rrRoundView.backgroundColor = UIColor(hue: hue, saturation: 1, brightness: 1, alpha: 1)
+        cell.rrChatText.backgroundColor = UIColor(hue: hue, saturation: 1, brightness: 1, alpha: 1)
+        
         return cell
     }
     

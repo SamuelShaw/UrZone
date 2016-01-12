@@ -119,6 +119,10 @@ class FridgeChatViewController: UIViewController, UITableViewDelegate, UITableVi
         let radius = cell.fridgeRoundView.frame.height / 2
         cell.fridgeRoundView.layer.cornerRadius = radius
         
+        let hue = 1 / CGFloat(currentData.count) * CGFloat(indexPath.row)
+        cell.fridgeRoundView.backgroundColor = UIColor(hue: hue, saturation: 1, brightness: 1, alpha: 1)
+        cell.fridgeChatText.backgroundColor = UIColor(hue: hue, saturation: 1, brightness: 1, alpha: 1)
+        
         return cell
     }
     
